@@ -8,6 +8,33 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <script src="timer.js"></script>
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<style>
+    
+.button{
+   display: inline-flex;
+   height: 55px;
+   width: 250px;
+   padding: 10px;
+   background-color:rgb(219, 84, 90) ;
+   border: none;
+   outline: none;
+   border-radius: 10px;
+   overflow: hidden;
+    font-family: 'QuickSand',sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+    cursor: pointer;
+    justify-content:center;
+}
+.button:hover{
+    background-color: rgba(222, 98, 104, 0.947);
+}
+.ride{
+    background-color: rgb(255,255,255);
+}
+    </style>
 </head>
 <body>
     <div class="navbar">
@@ -59,23 +86,21 @@
         <forms name="myForm">
         <br/>
         <div class="">
-        <button id="myButton" class="float-left submit-button" >Start Your Ride</button>
+        <button type= "button" class="button" id="mybutton">
+            <span class="myButton">Start Ride</spen>&nbsp;
+            <span class="myButton_icon">
+            <ion-icon name="bicycle"></ion-icon>
+</span>
+</button>
 
 <script type="text/javascript">
-    document.getElementById("myButton").onclick = function () {
+    document.getElementById("mybutton").onclick = function () {
         location.href = "mindex.php";
     };
 </script>
 </div>
 
-            <!--div class="wrapper">
-                <p><span id="seconds">00</span>:<span id="tens">00</span></p><br/>
-                <button id="button-start" name="start" placeholder="Start Ride">START RIDE</button>
-                <button id="button-stop" name="stop" placeholder="End Ride" >END RIDE</button>
-                <br/>
-                
-                <br/>
-            </div--> 
+           
            
 </forms>
 </center>
